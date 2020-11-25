@@ -8,12 +8,12 @@ else
 workbox.precaching.precacheAndRoute([
     {url: "/index.html", revision:"1"},
     {url: "/nav.html", revision:"1"},
-    {url: "/team-details.html", revision:"1"},
+    {url: "/team-details.html", revision:"2"},
     {url: "/manifest.json", revision:"1"},
     {url: "/logo.png", revision:"1"},
     {url: "/load-.gif", revision:"1"},
     {url: "/css/materialize.min.css", revision:"1"},
-    {url: "/js/data-api.js", revision:"1"},
+    {url: "/js/data-api.js", revision:"2"},
     {url: "/js/db.js", revision:"1"},
     {url: "/js/helpers.js", revision:"1"},
     {url: "/js/idb.js", revision:"1"},
@@ -63,7 +63,7 @@ workbox.routing.registerRoute(
         ],
     })
 );
-
+/*
 const CACHE_NAME = "submission2_1";
 var urlsToCache = [
   "/",
@@ -97,7 +97,7 @@ self.addEventListener("install", function(event) {
   );
 });
 
-/*
+
 //Load Cache
 self.addEventListener("fetch", function(event) {
     const base_url = "https://api.football-data.org/v2/";
